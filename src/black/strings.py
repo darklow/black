@@ -175,8 +175,8 @@ def normalize_string_quotes(s: str) -> str:
         return s
 
     elif value[:3] == '"""':
-        orig_quote = '"""'
-        new_quote = "'''"
+        return s
+
     elif value[0] == "'":
         orig_quote = "'"
         new_quote = '"'
